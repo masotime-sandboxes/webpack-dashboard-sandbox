@@ -8,11 +8,14 @@
     "node": true,
     "es6": true
   },
+  "plugins": [ "react" ],
   "parserOptions": {
-    "ecmaFeatures": { 
-      "modules": true,
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
-      "forOf": true
+      "forOf": true,
+      "jsx": true
     }
   }
 }
