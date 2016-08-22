@@ -4,7 +4,7 @@
   "description": "Fiddling with Webpack Dashboard",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./buildconfig/webpack.dev.babel.js --hot --inline --progress",
+    "start": "webpack-dashboard -- webpack-dev-server --config ./buildconfig/webpack.dev.babel.js --hot --inline --progress",
     "lint": "eslint src/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +30,7 @@
     "postcss-loader": "^0.10.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
+    "webpack-dashboard": "^0.1.6",
     "webpack-dev-server": "^1.15.0"
   }
 }

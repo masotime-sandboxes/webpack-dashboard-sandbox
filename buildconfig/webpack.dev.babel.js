@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import webpack from 'webpack';
+import DashboardPlugin from 'webpack-dashboard/plugin';
 
 const { stringify, parse } = JSON;
 const { env } = process;
@@ -16,6 +17,8 @@ const FILES = {
 };
 
 const PLUGINS = [
+  // dashboard plugin
+  new DashboardPlugin(),
   // Shared code
   new webpack.optimize.CommonsChunkPlugin('vendor', 'js/vendor.bundle.js'),
   // Avoid publishing files when compilation fails
