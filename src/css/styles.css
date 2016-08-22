@@ -1,0 +1,12 @@
+body {
+	font-family: Iowan Old Style;
+	padding: 0;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+#app {
+	margin: 0 auto;
+	max-width: 600px;
+}
